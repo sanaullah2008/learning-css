@@ -144,6 +144,7 @@ body{
 .child{
     width: 96%;
     float: none;
+    margin-bottom: 5px;
 }
 #main_sidebar{
     display: none;

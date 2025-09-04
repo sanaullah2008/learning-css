@@ -1,0 +1,52 @@
+/*CSS Varriable*/
+:root{
+    --primary:#1a003c;
+    --dwidth:100%;
+}
+body{
+    margin: 0px;
+    padding: auto;
+    background-color: black;
+    background: url(img/login_bg.jpg) fixed;
+}
+.parent{
+    display: inline-block;
+    width: var(--dwidth);
+    height: auto;
+}
+.child{
+    display: inline-block;
+    width: 24%;
+    height: 20%;
+    background-color: var(--primary);
+    margin: 4% 2%;
+    border-radius: 15px;
+    padding: 2%;
+    text-align: center;
+}
+p{
+    color: aliceblue;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+.child img{
+    height: 95px;
+    border-radius: 50px;
+}
+button{
+    height: 35px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: blue;
+    color: #fff;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: blueviolet;
+}
+body::selection{
+    background: #226537;
+}
+.child:nth-last-child(3){
+    background: #0c021a;
+}

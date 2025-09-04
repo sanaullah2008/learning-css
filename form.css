@@ -1,0 +1,58 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+.parent{
+    width: 50%;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    text-align: center;
+    padding: 5%;
+    border-radius: 5px;
+}
+.parent h2{
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+.parent p{
+    color: rgb(39, 36, 36);
+}
+.parent form{
+    margin-top: 25px;
+}
+.child{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.child:last-child{
+    margin-bottom: 0px;
+}
+.child label{
+    display: block;
+    margin-bottom: 5px;
+}
+.child input ,
+.child select ,
+.child textarea{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 3%;
+    width: 94%;
+    font-family: sans-serif;
+}
+.child select{
+    width: 100%;
+}
+.child input[type="button"]{
+    width: 200px;
+    background: blueviolet;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+}
+.child input[type="button"]:hover{
+    background: #000;
+    border: #000;
+}

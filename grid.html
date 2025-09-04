@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS Grid */
+        .parent{
+            background: #2c3e50;
+            display: grid;
+            grid-template-columns: repeat(3 ,33%);
+            grid-auto-rows: minmax(100px, auto);
+            justify-content: space-around;
+        }
+        .child{
+            background: #2980b9;
+            color: #fff;
+            margin: 2px;
+            padding: 10px;
+            border-radius: 2px;
+        }
+        .child input[type="button"]{
+            background: #2ecc71;
+            color: #fff;
+            width: 100px;
+            height: 30px;
+            border: 1px solid #ddd;
+        }
+        /*.child:nth-child(4) p,
+        .child:nth-child(5) p,
+        .child:nth-child(6) p{
+            display: none;
+        }*/
+        .child:nth-child(1){
+            /*grid-column-start: 1;
+            grid-column-end: 4;*/
+            /*Short version*/
+            grid-column: 1/4;
+            grid-column: span 3;
+            background: #9b59b6;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <h1>Hellow Everyone</h1>
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus asperiores distinctio voluptates minima illum aut quia perspiciatis debitis. Alias nesciunt laborum nisi reprehenderit, quis eveniet dolor tempora quia voluptatem voluptatum.</p>
+            <input type="button" value="ReadMore">
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus asperiores distinctio voluptates minima illum aut quia perspiciatis debitis. Alias nesciunt laborum nisi reprehenderit, quis eveniet dolor tempora quia voluptatem voluptatum.</p>
+            <input type="button" value="ReadMore">
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus asperiores distinctio voluptates minima illum aut quia perspiciatis debitis. Alias nesciunt laborum nisi reprehenderit, quis eveniet dolor tempora quia voluptatem voluptatum.</p>
+            <input type="button" value="ReadMore">
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus asperiores distinctio voluptates minima illum aut quia perspiciatis debitis. Alias nesciunt laborum nisi reprehenderit, quis eveniet dolor tempora quia voluptatem voluptatum.</p>
+            <input type="button" value="ReadMore">
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus asperiores distinctio voluptates minima illum aut quia perspiciatis debitis. Alias nesciunt laborum nisi reprehenderit, quis eveniet dolor tempora quia voluptatem voluptatum.</p>
+            <input type="button" value="ReadMore">
+        </div>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus asperiores distinctio voluptates minima illum aut quia perspiciatis debitis. Alias nesciunt laborum nisi reprehenderit, quis eveniet dolor tempora quia voluptatem voluptatum.</p>
+            <input type="button" value="ReadMore">
+        </div>
+    </div>
+</body>
+</html>

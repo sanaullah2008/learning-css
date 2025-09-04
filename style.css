@@ -1,0 +1,76 @@
+/*
+h1=selector
+color=property
+red=value
+display: block;
+*/
+body{
+    background: url(img/login_bg.jpg);
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parent{
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    background:#222f3e;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    align-content: center;
+}
+.welcome{
+    margin-bottom:35px;
+    color: aliceblue;
+    font-size: 35px;
+    
+}
+.email{
+    margin-bottom:15px;
+    font-size: 20px;
+    border-radius:5px ;
+}
+.password{
+    margin-bottom:45px;
+    font-size: 20px;
+    border-radius:5px ;
+}
+button{
+    font-size: 25px;
+    border-radius:5px ;
+}
+button:hover{
+    background-color: blueviolet;
+}
+button:focus{
+    background-color: black;
+    color: aliceblue;
+}
+.other{
+    font-size: 20px;
+    color: aliceblue;
+    display: block;
+}
+.fa-facebook{
+    color: aliceblue;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-google{
+    color: aliceblue;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.fa-google:hover{
+    color: tomato;
+}
+body::selection{
+    background-color: #226537;
+}

@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            display: block;
+        }
+        .first{
+            box-sizing: border-box;
+            width: 30%;
+            margin: 50px;
+            max-width: 250px;
+            height: 18%;
+            max-height: 22%;
+            background: #08b377;
+            border: 5px solid #000;
+            margin-bottom: 45px;
+            transition: 1s;
+        }
+        .first:hover{
+            transform: translate(15px,25px);
+        }
+        .second{
+            box-sizing: border-box;
+            border-radius: 100px;
+            width: 31%;
+            max-width: 250px;
+            margin: 50px;
+            height: 20%;
+            max-height: 22%;
+            background: #eee84b;
+            border: 5px solid #000;
+            text-align: center;
+            transition: 1s;
+        }
+        .second:hover{
+            /*transform: rotate(360deg);*/
+            transform: scale(1.2);
+        }
+        p{
+            font-size: 50px;
+        }
+        /*For Animation*/
+        .parent{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 10px;
+            width: 400px;
+            height: 400px;
+            border: 2px solid #000;
+            text-align: center;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            background: #077ae6;
+            border-radius: 50%;
+            position: absolute;
+            border: 2px solid #000;
+            animation-name: rounds;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes rounds{
+            0%{
+                top: 15;
+                left: 15;
+            }
+            25%{
+                left: 300px;
+                right: 15;
+                top: 15;
+            }
+            50%{
+                left: 300px;
+                top: 300px;
+                bottom: 15;
+            }
+            75%{
+                left: 15;
+                top: 300px;
+            }
+            100%{
+                left: 15;
+                top: 15;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Animation-->
+    <div class="parent">
+        <p>❤️</p>
+        <div class="child"></div>
+    </div>
+    <div class="first"></div>
+    <div class="second"><p>❤️</p></div>
+
+</body>
+</html>

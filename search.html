@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Robinhood</title>
+        <style>
+            form{
+                margin-top: 25px;
+                margin-left: 10px;
+            }
+            input[type="text"]{
+                border: 1px solid #ddd;
+                padding: 15px 25px;
+                color: #000;
+                font-size: 14px;
+                border-radius: 5px;
+                float: left;
+            }
+            input[type="button"]{
+                border: 1px solid #70a1ff;
+                padding: 15px 25px;
+                color: #000;
+                font-weight: bold;
+                font-size: 14px;
+                border-radius: 5px;
+                background: #70a1ff;
+                cursor: pointer;
+                transition: 0.3s;
+                display: none;
+            }
+            input:not(:placeholder-shown) + input[type="button"]{
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="">
+            <input type="text" placeholder="Search Anything">
+            <input type="button" value="Search">
+        </form>
+    </body>
+</html>

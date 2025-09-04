@@ -130,7 +130,7 @@ color: #1c1e21;
     font-size: 11px;
 }
 
-@media screen and (min-width: 200px) and (max-width: 500px){
+@media screen and (max-width: 500px){
     .container,
     .parent{
     width: 100%;

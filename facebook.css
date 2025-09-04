@@ -149,6 +149,7 @@ color: #1c1e21;
     margin-bottom: 40px;
 }
 .right_child{
+    width: 85%;
     flex-basis: 100%;
     text-align: center;
 }
@@ -157,3 +158,4 @@ color: #1c1e21;
 }
 
 }
+

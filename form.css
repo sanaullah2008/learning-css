@@ -3,7 +3,7 @@ body{
     margin: 0;
 }
 .parent{
-    width: 50%;
+    width: 70%;
     border: 1px solid #ddd;
     margin: 20px auto;
     text-align: center;
@@ -56,3 +56,4 @@ body{
     background: #000;
     border: #000;
 }
+

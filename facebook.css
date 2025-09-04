@@ -130,7 +130,7 @@ color: #1c1e21;
     font-size: 11px;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .container,
     .parent{
     width: 100%;
@@ -155,4 +155,5 @@ color: #1c1e21;
 .right_child input{
     font-size: 15px;
 }
+
 }

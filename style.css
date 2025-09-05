@@ -33,18 +33,26 @@ body{
     border-radius:5px ;
 }
 .password{
-    margin-bottom:45px;
+    margin-bottom:40px;
     font-size: 20px;
     border-radius:5px ;
 }
-button{
-    font-size: 25px;
+.home{
+    text-decoration: none; 
+    background: black;
+    padding: 15px;
+    width: 100px;
+    height: 20px;
+    font-size: 20px;
     border-radius:5px ;
+    color: #fff;
+    margin-bottom: 5px;
+    display: inline-block;
 }
-button:hover{
+.home:hover{
     background-color: blueviolet;
 }
-button:focus{
+.home:focus{
     background-color: black;
     color: aliceblue;
 }
